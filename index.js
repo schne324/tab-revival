@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/tab-revival');
+console.error('nothing exists yet man')
