@@ -1,0 +1,17 @@
+!!!5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Home | Tab Revival
+    link(href="/styles/styles.css", rel="stylesheet", media="all", type="text/css");
+
+  body
+    div#header
+      h1.logo Tab Revival
+      div(id="search-bin")
+        label(for="search") search
+        input(type="text", id="search", name="search")
+
+    block content
+    block scripts
+      script(src="/js/scripts.js")
