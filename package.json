@@ -1,0 +1,21 @@
+{
+  "name": "tab-revival",
+  "version": "0.0.0",
+  "description": "Bringing guitar tabs to life",
+  "keywords": [],
+  "author": "Harris Schneiderman",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/schne324/tab-revival.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "main": "index",
+  "bugs": {
+    "url": "https://github.com/schne324/tab-revival/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
