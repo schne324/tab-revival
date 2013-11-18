@@ -6,7 +6,7 @@
  - configure order (as a whole)
 
 
- # Eventually, support for:
+ ## Eventually, support for:
 
  - 5b || 5^ === bending of a string on the 5th fret
  - 5h7 === hammer from the 5th fret to the 7th fret
@@ -14,7 +14,7 @@
  - chord tablature (Am Bm Em) === just parse the letters of the chords
 
 
- # tab reference guide:
+ ## tab reference guide:
  
  - h = hammer on 
  - p = pull off 
