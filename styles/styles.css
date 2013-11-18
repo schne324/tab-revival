@@ -1,3 +1,66 @@
 body {
-	background-color: #f00;
+	background-image: url(../img/bgnoise_lg.png);
+	font-family: 'Unica One', cursive;
+	width: 100%;
+}
+
+#header {
+	background-color: #000;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Monoton', cursive;
+	font-size: 80px;
+	margin: 0;
+	font-weight: normal;
+	padding: 0;
+	text-align: center;
+}
+h1 span {
+	color: #ff7400;
+}
+
+.search-bar {
+	position: absolute;
+	margin-left: 85%;
+	margin-top: -100px;
+}
+
+.search-bar label {
+	color: #fff;
+}
+
+.paste-form {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#menu {
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#menu ul {
+	margin: 0 auto;
+}
+
+#menu li {
+	font-size: 20px;
+	padding: 15px;
+	text-align: center;
+	list-style-type: none;
+	float: left;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#menu li a:hover {
+	color: #ff7400;
 }

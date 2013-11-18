@@ -3,15 +3,26 @@ html(lang="en")
   head
     meta(charset="utf-8")
     title Home | Tab Revival
-    link(href="/styles/styles.css", rel="stylesheet", media="all", type="text/css");
+    link(href="../styles/styles.css", rel="stylesheet", media="all", type="text/css");
+    link(href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css')
 
   body
     div#header
-      h1.logo Tab Revival
-      div(id="search-bin")
-        label(for="search") search
-        input(type="text", id="search", name="search")
-
+      h1.logo
+        span TAB 
+        | REVIVAL
+      div(class="search-bar")
+        label(for="search") Search:
+        input(type="text", id="search")
+      div(id="menu")
+        ul
+          li
+            a(href="#") Revive Tab
+          li
+            a(href="#") Find Tabs
+          li
+            a(href="#") Reference  
     block content
     block scripts
-      script(src="/scripts/scripts.js")
+      script(src="../scripts/scripts.js")

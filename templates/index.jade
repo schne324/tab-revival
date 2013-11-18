@@ -1,3 +1,8 @@
 extend layout
 
 block content
+    form(method="post", class="paste-form")
+        label(for="tabarea", class="paste") Tab:
+        textarea(id="tabarea", placeholder="Paste tablature here", name="tab", rows="20", cols="80")
+
+    button(type="submit") upload
