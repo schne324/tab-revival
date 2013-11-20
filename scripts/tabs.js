@@ -1,10 +1,7 @@
 'use strict';
 
-var active = document.querySelector('.tab-trigger.active'),
-    triggers = document.querySelectorAll('.tab-trigger');
 
-var tabPanel1 = document.getElementById('tab-one'),
-    tabPanel2 = document.getElementById('tab-two');
+var tabPanel2 = document.getElementById('tab-two');
 
 // hide the inactive tab
 tabPanel2.style.display = 'none';
