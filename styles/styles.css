@@ -1,3 +1,4 @@
+
 body {
 	background-image: url(../img/bgnoise_lg.png);
 	font-family: 'Unica One', cursive;
@@ -23,15 +24,51 @@ h1 span {
 
 .search-bar {
 	position: absolute;
-	margin-left: 85%;
-	margin-top: -100px;
+	margin-left: 70%;
+	margin-top: 10px;
 }
 
 .search-bar label {
 	color: #fff;
 }
 
+.submit-btn {
+	text-transform: uppercase;
+	font-family: 'Unica One', cursive;
+	background-color: #000;
+	color: #fff;
+	font-size: 24px;
+	padding: 2px 21px;
+	border-radius: 5px;
+	-moz-transition: color 1s, border .2s, border-radius .2s;
+    -webkit-transition: color 1s, border .2s, border-radius .2s;
+    -o-transition: color 1s, border .2s, border-radius .2s;
+    transition: color 1s, border .2s, border-radius .2s;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+	color: #ff7400;
+	border-radius: 15px;
+	border: 5px solid #ff7400;
+	-moz-transition: color 1s, border .2s, border-radius .2s;
+    -webkit-transition: color 1s, border .2s, border-radius .2s;
+    -o-transition: color 1s, border .2s, border-radius .2s;
+    transition: color 1s, border .2s, border-radius .2s;
+
+}
+
+.submit-btn:active {
+	background-color: #ff7400;
+	border: 2px solid #fff;
+	color: #000;
+	-moz-transition: color 1s, border .2s, border-radius .5s;
+    -webkit-transition: color 1s, border .2s, border-radius .5s;
+    -o-transition: color 1s, border .2s, border-radius .5s;
+    transition: color 1s, border .2s, border-radius .5s;
+}
+
 .paste-form {
+	margin-top: 10px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -57,10 +94,55 @@ h1 span {
 }
 
 #menu li a {
+	text-transform: uppercase;
 	text-decoration: none;
 	color: #fff;
 }
 
-#menu li a:hover {
+#menu li a:hover, #menu li a:focus {
+	-moz-transition: color 1s, border .2s;
+    -webkit-transition: color 1s, border .2s;
+    -o-transition: color 1s, border .2s;
+    transition: color 1s, border .2s;
 	color: #ff7400;
+	border-bottom: 4px double #ff7400;
+}
+
+.tab-trigger {
+	text-transform: uppercase;
+	color: #666;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 2px;
+	border: 3px solid #000;
+	border-bottom: none;
+	padding: 5px 12px 5px 12px;
+	-moz-transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+    -webkit-transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+    -o-transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+    transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+}
+
+.tab-trigger.active {
+	padding: 9px 12px 9px 12px;
+	color: #000;
+	background-color: #fff;
+	box-shadow: 2px 2px 12px #000;
+	-moz-transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+    -webkit-transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+    -o-transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+    transition: background-color 1s, color 1s, box-shadow 1s, padding 1s;
+}
+
+.tab-trigger:hover, .tab-trigger:focus {
+	color:#000;
+	-moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+
+.tabarea {
+	border: 2px solid #000;
+	box-shadow: 2px 2px 15px #000;
 }
