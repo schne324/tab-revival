@@ -1,16 +1,17 @@
-!!!5
+doctype html
 html(lang="en")
   head
     meta(charset="utf-8")
     title Home | Tab Revival
-    link(href="../styles/styles.css", rel="stylesheet", media="all", type="text/css");
+    link(href="styles.css", rel="stylesheet", media="all", type="text/css")
     link(href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css')
+    script(src="scripts/jquery.min.js")
 
   body
     div#header
       h1.logo
-        span TAB 
+        span TAB
         | REVIVAL
       div(class="search-bar")
         label(for="search") Search:
@@ -22,9 +23,8 @@ html(lang="en")
           li
             a(href="#") Find Tabs
           li
-            a(href="#") Reference  
+            a(href="#") Reference
     block content
     block scripts
-      script(src="../scripts/jquery-1.10.2.min.js")
-      script(src="../scripts/scripts.js")
-      script(src="../scripts/tabs.js")
+      script(src="scripts/index.js")
+      script(src="scripts/tabs.js")

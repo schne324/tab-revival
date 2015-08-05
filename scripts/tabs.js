@@ -1,5 +1,5 @@
+/* global $ */
 'use strict';
-
 
 var tabPanel2 = document.getElementById('tab-two');
 

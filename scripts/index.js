@@ -1,2 +1,4 @@
 
-console.error('nothing exists yet man')
+var parser = require('./parser');
+
+parser('my string');
