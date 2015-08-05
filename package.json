@@ -9,7 +9,10 @@
     "url": "git://github.com/schne324/tab-revival.git"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "mocha": "^2.2.5"
+  },
   "main": "index",
   "bugs": {
     "url": "https://github.com/schne324/tab-revival/issues"
