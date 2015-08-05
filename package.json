@@ -10,6 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "better-assert": "^1.0.2",
     "duo": "^0.15.3",
     "fs-extra": "^0.22.1",
     "gulp": "^3.9.0",
