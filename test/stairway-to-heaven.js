@@ -5,7 +5,7 @@ var assert = require('better-assert');
 var tab = fs.readFileSync('test/stairway-to-heaven.txt', 'utf-8');
 
 
-describe('parser shit', function () {
+describe('tab parser', function () {
 	parser([
     'e ------5--7-----7--8------8--2-----2-0--------0---------------',
     'B ----5------5--------5---------3--------1---1---1----0-1-1----',
@@ -15,9 +15,12 @@ describe('parser shit', function () {
     'E -------------------------------------------------------------'
   ].join('\r\n'));
 
-	it('should do some things', function () {
-    assert(true);
-  });
+  it('should build an array of "moments"');
+	it('should build each moment with 6 "string" objects');
+  // parse out "eBGDAE" if its there...
+  it('should parse out useless characters at the beginning of each "string"');
+  it('should handle hammers and pull offs');
+  it('should handle slides');
 });
 
 
