@@ -4,28 +4,28 @@ module.exports = parser;
 var rx = /^(?:\w*\s)?([-\dhp\/\\]+)[\s\r\n]*$/gm;
 
 function parser(str) {
-	var tab = [];
+	var sixString = [];
   var results;
 
   while ((results = rx.exec(str)) !== null) {
     var string = results[1];
-    string && tab.push(results[1]);
+    string && sixString.push(results[1]);
   }
 
   var moments = [];
 
-  tab.forEach(function (guitarString, index) {
-    if (!moments[index]) {
-      moments[index] = [];
-    }
+  sixString.forEach(function (string, stringKey) {
+    for (var i = 0; i < string.length; i++) {
 
-    var thisMoment = moments[index];
-    var stringMoments = guitarString.length;
+      if (stringKey === 0) {
+        moments.push({});
+      }
 
-    for (var i = 0; i < stringMoments; i++) {
-      thisMoment.push(guitarString[i]);
-    }
+      moments[i][stringKey] = string[i];
+    };
   });
+
+  return moments;
 }
 
 /*
