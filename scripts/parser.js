@@ -4,7 +4,7 @@ module.exports = parser;
 var rx = /^(?:\w*\s)?([-\dhp\/\\]+)[\s\r\n]*$/gm;
 
 function parser(str) {
-	var sixString = [];
+  var sixString = [];
   var results;
 
   while ((results = rx.exec(str)) !== null) {
@@ -22,7 +22,7 @@ function parser(str) {
       }
 
       moments[i][stringKey] = string[i];
-    };
+    }
   });
 
   return moments;
