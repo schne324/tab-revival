@@ -1,6 +1,4 @@
 
-require('harmonize')();
-
 var stylus = require('gulp-stylus');
 var jade = require('gulp-jade');
 var fs = require('fs-extra');
