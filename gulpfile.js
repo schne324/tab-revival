@@ -1,5 +1,6 @@
 
 var stylus = require('gulp-stylus');
+var shell = require('gulp-shell');
 var jade = require('gulp-jade');
 var fs = require('fs-extra');
 var gulp = require('gulp');
@@ -8,18 +9,12 @@ var Duo = require('duo');
 
 var BUILD_DIR = 'build';
 
-gulp.task('default', ['templates', 'scripts', 'styles']);
-
-gulp.task('templates', function () {
-  gulp.src(path.join('templates', '**/*.jade'))
-    .pipe(jade())
-    .pipe(gulp.dest(BUILD_DIR));
-});
+gulp.task('default', ['scripts', 'styles']);
 
 gulp.task('styles', function () {
   gulp.src(path.join('styles', '**/*.styl'))
     .pipe(stylus())
-    .pipe(gulp.dest(BUILD_DIR));
+    .pipe(gulp.dest(path.join(BUILD_DIR, 'styles')));
 });
 
 gulp.task('scripts', function () {
@@ -32,8 +27,12 @@ gulp.task('scripts', function () {
   fs.copySync('scripts/jquery-1.10.2.min.js', path.join(BUILD_DIR, 'scripts', 'jquery.min.js'));
 });
 
+gulp.task('install', shell.task([
+  'rm -rf node_modules',
+  'npm i'
+]));
+
 gulp.task('watch', function () {
-  gulp.watch('templates/**/*.jade', ['templates']);
   gulp.watch('styles/**/*.styl', ['styles']);
   gulp.watch('scripts/**/*.js', ['scripts']);
 });
