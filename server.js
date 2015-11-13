@@ -7,9 +7,11 @@ var config = require('./config');
 var debug = require('debug')('server');
 var express = require('express');
 var morgan = require('morgan');
+var mongoose = require('mongoose');
 // var cookieParser = require('cookie-parser');
 // var bodyParser = require('body-parser');
 var DEV = !process.env.PRODUCTION;
+var HOST = config.server.host;
 var PORT = config.server.port;
 
 var app = module.exports = express();
@@ -57,5 +59,10 @@ if (!module.parent) {
     console.log('  tabrevival running');
     console.log('  listening on port %d', PORT);
     console.log();
+
+    mongoose.connect(HOST, 'tab-revival', function () {
+      debug('connected???');
+    });
+
   });
 }
