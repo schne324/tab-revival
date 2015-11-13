@@ -1,5 +1,8 @@
 extends ../layout
 
+block title
+    title Home | Tab Revival
+
 block content
     form(method="post", class="paste-form")
         br
@@ -12,4 +15,4 @@ block content
             div.tab-panel#tab-two(role="tabpanel")
                 textarea(class="tabarea", placeholder="Paste bass tablature here", name="tab")
 
-        button(type="submit", class="submit-btn") upload
+        button(type="submit", class="submit-btn") Upload
