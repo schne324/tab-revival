@@ -1,9 +1,32 @@
 
 # tab-revival
 
-  Bringing guitar tabs to life
+Bringing guitar tabs to life
 
-## License 
+## Installation
+
+Clone the repository and install the dependencies
+
+```bash
+$ git clone git@github.com:schne324/tab-revial.git
+$ cd tab-revival
+$ npm i
+$ gulp
+```
+
+then copy the example configuration file and update it with settings for your environment
+
+```bash
+$ cp config.example.json config.json
+```
+
+## Deployment
+
+```bash
+$ node server
+```
+
+## License
 
 (The MIT License)
 
