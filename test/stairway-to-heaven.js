@@ -1,5 +1,5 @@
 
-var parser = require('../scripts/parser.js');
+var parser = require('../lib/parser.js');
 var fs = require('fs-extra');
 var assert = require('better-assert');
 var tab = fs.readFileSync('test/tabs/stairway-to-heaven.txt', 'utf-8');
@@ -43,11 +43,8 @@ describe('tab parser', function () {
             assert(moment[key].length === 1);
           }
         }
-
         assert(momentLength === 6);
       });
     });
   });
 });
-
-
