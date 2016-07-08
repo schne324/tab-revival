@@ -15,7 +15,6 @@ describe('tab parser', function () {
     'E -------------------------------------------------------------'
   ].join('\r\n');
   var moments = parser(intro);
-  console.log(moments);
 
   it('should build an array of "moments"', function () {
     assert(Array.isArray(moments));
